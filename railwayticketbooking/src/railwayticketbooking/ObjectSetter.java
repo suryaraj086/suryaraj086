@@ -9,4 +9,14 @@ public class ObjectSetter {
 		pass.setPassengerid(id);
 		return pass;
 	}
+
+	public static Ticket ticketSetter(int passenger, String status, long departureTime, int ticketNumber) {
+		Ticket ticketObj = new Ticket();
+		ticketObj.setDepartureTime(departureTime);
+		ticketObj.setPassengers(passenger);
+		ticketObj.setTicketNo(ticketNumber);
+		ticketObj.setTicketStatus("");
+		ticketObj.setPrice(100);
+		return ticketObj;
+	}
 }

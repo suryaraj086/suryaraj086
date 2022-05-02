@@ -49,7 +49,8 @@ public class Passenger {
 
 	@Override
 	public String toString() {
-		return " status=" + status + ", name=" + name + ", age=" + age + ", passengerid=" + passengerid + "\n";
+		return " status= " + status + ", name= " + name + ", age= " + age + ", ticket id= " + passengerid
+				+ " seat number= " + seatNo + "\n";
 	}
 
 }

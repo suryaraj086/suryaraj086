@@ -6,6 +6,15 @@ public class Ticket {
 	String ticketStatus;
 	int passengers;
 	int ticketNo;
+	int price;
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
 
 	public int getTicketNo() {
 		return ticketNo;
@@ -45,6 +54,12 @@ public class Ticket {
 
 	public void setSeatNo(long seatNo) {
 		this.seatNo = seatNo;
+	}
+
+	@Override
+	public String toString() {
+		return "Ticket [departureTime=" + departureTime + ", seatNo=" + seatNo + ", ticketStatus=" + ticketStatus
+				+ ", passengers=" + passengers + ", ticketNo=" + ticketNo + ", price=" + price + "]";
 	}
 
 }
